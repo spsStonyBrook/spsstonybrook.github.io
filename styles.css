@@ -26,16 +26,16 @@ nav ul li a {
     text-decoration: none;
   }
   
-  nav ul li a:hover:not(.active) {background-color: #990000;}
+nav ul li a:hover:not(.active) {background-color: #990000;}
   
-  nav ul li a.active {background-color: #000000;}
+nav ul li a.active {background-color: #000000;}
   
-  nav ul li.right {float: right;}
+nav ul li.right {float: right;}
   
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     nav ul li.right, 
     nav ul li {float: none;}
-  }
+}
 
 .row::after {
     content: "";
