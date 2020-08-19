@@ -20,17 +20,28 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@700&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Carousel library -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    
+    <!-- Logos -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-    <nav class="nav-bar clearfix">
+    <nav class="nav-bar clearfix" id="topnav">
         <div class="nav-container">
             <img src="assets/media/logo.png" id="logo">
             <ul>
+                <a href="javascript:void(0);" class="stacks" onclick="menu()">
+                <i class="fa fa-bars"></i></a>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="resources.html">Resources</a></li>
                 <li><a href="schedule.html">Schedule</a></li>
+                
             </ul>
         </div>
     </nav>
