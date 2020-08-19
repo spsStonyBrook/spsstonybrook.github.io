@@ -4,6 +4,8 @@
 
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 .clearfix::after {
@@ -18,6 +20,7 @@ body {
     margin: auto;
 }
 
+/* Nav bar*/
 .nav-bar {
     background-color: #55698C;
     height: 80px;
@@ -49,6 +52,7 @@ body {
     color: white;
     text-decoration: none;
     font-size: 20px;
+    font-family: 'Jaldi', sans-serif;
     line-height: 80px;
     padding: 14px 16px;
     border-right: 1px solid white;
@@ -74,6 +78,8 @@ body {
     transform: translateY(-50%);
 }
 
+
+/* Carousel */
 .main-carousel {
     width: 60%;
     margin-left: auto;
@@ -93,8 +99,30 @@ body {
     height: 400px;
 }
 
-@media screen and ( min-width: 768px ) {
-  .carousel img {
-    height: 400px;
-  }
+@media screen and (min-width: 768px) {
+    .carousel img {
+        height: 400px;
+    }
+}
+
+/* Resources Grid */
+.grid-container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 20px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    background-blend-mode: lighten;
 }
