@@ -11,10 +11,16 @@
 ### Other
 - README: Literally this
 - LICENSE: Nice fancy license to open-source this
-| assets: Files that Pages depend on
-| - | media: images
-| - | ico: files dealing with site manifest or favicon
-| - | style: stylesheets (only styles.css for now)
+| assets: Files that Pages depend on  
+| - | media: images  
+| - | ico: files dealing with site manifest or favicon  
+| - | style: stylesheets (only styles.css for now)  
+| - | postMaker: A super simple md -> HTML converter  
+    | - PRE.partial.html: the "beginning" part to sandwich a page with  
+    | - POST.partial.html: the "ending" part to sandwich a page with  
+    | - example.md: An example input to the tool  
+    | - example.html: the output of example.md  
+    | - postMaker.py: Script to convert. Usage: `postMaker.py [input\_file] [output\_file]`  
 
 ## Conventions
 
