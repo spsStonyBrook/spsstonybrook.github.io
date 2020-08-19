@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #55698C;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+/* Nav bar*/
+.nav-bar {
+    background-color: #55698C;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-bar img {
+    float: left;
+}
+
+.nav-bar ul {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+}
+
+.nav-bar li {
+    list-style-type: none;
+    padding: 0px;
+    height: 24px;
+    display: inline;
+}
+
+.nav-bar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Jaldi', sans-serif;
+    line-height: 80px;
+    padding: 14px 16px;
+    border-right: 1px solid white;
+}
+
+.nav-container {
+    height: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-wrapper {
+    line-height: 80px;
+}
+
+#logo {
+    height: 70px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+/* Carousel */
+.main-carousel {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-cell {
+    width: 100%;
+    height: 400px;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-cell img {
+    height: 400px;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel img {
+        height: 400px;
+    }
+}
+
+/* Resources Grid */
+.grid-container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 20px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    background-blend-mode: lighten;
+}
+
+/* Schedule Page */
+.calendar-container {
+    width: 800px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calendar {
+    border: 0;
+    width: 800px;
+    height: 700px;
+}

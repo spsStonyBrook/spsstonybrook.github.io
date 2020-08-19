@@ -5,16 +5,24 @@
 ### Pages <HTML5>
 - index: Home page
 - about: About us and the national organization
+- resources: So far empty but resources for students
+- schedule: A Google Calendar of events
 
 ### Other
 - README: Literally this
-- styles: CSS code describing the main site's appearance
+- LICENSE: Nice fancy license to open-source this
+| assets: Files that Pages depend on  
+| - | media: images  
+| - | ico: files dealing with site manifest or favicon  
+| - | style: stylesheets (only styles.css for now)  
+| - | postMaker: A super simple md -> HTML converter  
+    | - PRE.partial.html: the "beginning" part to sandwich a page with  
+    | - POST.partial.html: the "ending" part to sandwich a page with  
+    | - example.md: An example input to the tool  
+    | - example.html: the output of example.md  
+    | - postMaker.py: Script to convert. Usage: `postMaker.py [input\_file] [output\_file]`  
 
 ## Conventions
 
 - Push new contributions to the gh-pages branch before merging with master
 - When creating new pages, mimic the style of existing ones (ideally copy/paste the <head> and <nav>)
-
-
-
-
