@@ -45,6 +45,7 @@ a {
     display: inline-block;
     vertical-align: middle;
     float: right;
+    background-color: #55698C;
 }
 
 .nav-bar li {
@@ -82,6 +83,32 @@ a {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+@media screen and (max-width: 600px) {
+    .nav-bar a {
+        display: none;
+    }
+
+    .nav-bar a.stacks {
+        float: right;
+        display: block;
+        font-size: 20px;
+        color: white;
+        line-height: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-bar.responsive ul {
+        position: static;
+    }
+    
+    .nav-bar.responsive a {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+    }
 }
 
 
