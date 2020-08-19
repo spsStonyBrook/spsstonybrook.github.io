@@ -132,3 +132,17 @@ a {
     background-color: rgba(255, 255, 255, 0.6) !important;
     background-blend-mode: lighten;
 }
+
+/* Schedule Page */
+.calendar-container {
+    width: 800px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calendar {
+    border: 0;
+    width: 800px;
+    height: 700px;
+}
