@@ -2,10 +2,12 @@
     box-sizing: border-box;
 }
 
-body {margin: 0;}
+body {
+    margin: 0;
+}
 
 nav li {
-  display: inline;
+    display: inline;
 }
 
 nav ul {
@@ -16,7 +18,9 @@ nav ul {
     background-color: #990000;
 }
 
-nav ul li {float: left;}
+nav ul li {
+    float: left;
+}
 
 nav ul li a {
     display: block;
@@ -24,17 +28,26 @@ nav ul li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-nav ul li a:hover:not(.active) {background-color: #990000;}
-  
-nav ul li a.active {background-color: #000000;}
-  
-nav ul li.right {float: right;}
-  
+}
+
+nav ul li a:hover:not(.active) {
+    background-color: #990000;
+}
+
+nav ul li a.active {
+    background-color: #000000;
+}
+
+nav ul li.right {
+    float: right;
+}
+
 @media screen and (max-width: 600px) {
-    nav ul li.right, 
-    nav ul li {float: none;}
+
+    nav ul li.right,
+    nav ul li {
+        float: none;
+    }
 }
 
 .row::after {
@@ -42,23 +55,56 @@ nav ul li.right {float: right;}
     clear: both;
     display: table;
 }
-  
+
 [class*="col-"] {
     float: left;
     padding: 15px;
 }
-  
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
- 
-  
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
