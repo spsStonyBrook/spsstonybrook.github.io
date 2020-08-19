@@ -4,6 +4,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
+    
+    <!-- Favicon stuff -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -11,16 +13,20 @@
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    
+    <!-- Info & Custom Style -->
     <title>Stony Brook Society of Physics Students</title>
     <link rel="stylesheet" href="assets/style/styles.css">
+    
+    <!-- Carousel library -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
     <nav class="nav-bar clearfix">
         <div class="nav-container">
             <img src="assets/media/logo.png" id="logo">
-            
-            
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -30,8 +36,18 @@
     </nav>
 
     <div class="container clearfix">
-    <h1>Welcome to SBU SPS</h1>
+        <h1>Welcome to SBU SPS</h1>
+        <p>The Society of Physics Students (SPS) is a <a href="https://www.spsnational.org/">national organization</a> under the American Institute of Physics, open to any student interested in physics. At the Stony Brook University chapter, we put an emphasis on idk Mike or Marisa you write something here I'm bad at this part.</p>
+        <p>But I do need to fill space so here's a verse from the Bible.</p>
+        <blockquote>I have been saying that we get Newton's law. That is not quite true, because Newton's law includes some nonconservative forces like friction. Newton said that ma is equal to any F. But the principle of least action only works for conservative systems --- where all forces can be gotten from a potential function. You know, however, that on a microscopic level --- on the deepest level of physics --- there are no nonconservative forces. Nonconservatives forces, like friction, appear only because we neglect microscopic complications --- there are just too many particles to analyze. But the fundamental laws can be put in the form of a principle of least action.</blockquote>
+
+        <div class="main-carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true}'>
+            <div class="carousel-cell">
+                <img src="assets/media/caro1.jpg"> </div>
+            <div class="carousel-cell"> <img src="assets/media/caro2.jpg"> </div>
+            <div class="carousel-cell"> <img src="assets/media/caro3.jpg"> </div>
+        </div>
     </div>
+</body>
 
-
-</body></html>
+</html>
