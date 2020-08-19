@@ -103,7 +103,7 @@ a {
     .nav-bar.responsive ul {
         position: static;
     }
-    
+
     .nav-bar.responsive a {
         display: block;
         width: 100%;
@@ -114,7 +114,7 @@ a {
 
 /* Carousel */
 .main-carousel {
-    width: 60%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -129,12 +129,18 @@ a {
 }
 
 .carousel-cell img {
-    height: 400px;
+    height: 200px;
 }
 
-@media screen and (min-width: 768px) {
-    .carousel img {
+@media screen and (min-width: 600px) {
+    .carousel-cell img {
         height: 400px;
+    }
+
+    .main-carousel {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
