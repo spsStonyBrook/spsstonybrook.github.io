@@ -166,6 +166,40 @@ a {
     background-blend-mode: lighten;
 }
 
+.grid-80-20 {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    font-size: 18px;
+}
+
+.grid-20-80 {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    font-size: 18px;
+}
+
+.grid-20-80 > div {
+    padding-left: 2em;
+}
+
+.grid-20-20 > .img {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: left !important;
+}
+
+.grid-80-20 {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    font-size: 18px;
+}
+
+.grid-80-20 > .img {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: right !important;
+}
+
 /* Schedule Page */
 .calendar-container {
     width: 800px;
@@ -179,3 +213,9 @@ a {
     width: 800px;
     height: 700px;
 }
+
+/* Posts */
+.post {
+    text-decoration: none !important;
+}
+
