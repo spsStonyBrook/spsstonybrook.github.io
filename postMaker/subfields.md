@@ -38,7 +38,7 @@ The Laufer Center offers many opportunities for undergraduate research. Undergra
 
 ### C.N. Yang Institute for Theoretical Physics
 
-The Yang Institute for Theoretical Physics (YITP) and its associated professors study a variety of theoretical topics such as supersymmetry, quantum descriptions of gravity, and quantum computing. The “theoretical” side of this physics comes from creating and solving mathematical models in order to characterize these phenomena. Theoretical physics research paves the way for computational and experimental studies, in that it provides the first layer of proof of new physics.
+The Yang Institute for Theoretical Physics (YITP) and its associated professors study a variety of theoretical topics such as supersymmetry, quantum descriptions of gravity, and quantum computing. The ''theoretical'' side of this physics comes from creating and solving mathematical models in order to characterize these phenomena. Theoretical physics research paves the way for computational and experimental studies, in that it provides the first layer of proof of new physics.
 
 Theoretical physics research typically requires a solid understanding of advanced math concepts, so don't be afraid to talk to professors about what background knowledge you may need! Courses such as MAT 310 (Linear Algebra) and MAT 319/320 (Introduction to Analysis) can also help prepare you. Though extremely varied, undergraduate YITP research projects typically involve evaluating numerical computation code to explore different theoretical models of a system. Often undergraduate students can undergo a guided study program with professors from YITP to accelerate their education in those skills required to work in theoretical physics at the PhD level.
 
@@ -50,7 +50,7 @@ Though some IACS professors are associated with the Department of Physics and As
 
 ### Condensed Matter: Theory, Experiment and Device Physics
 
-Condensed matter is the study of the physical properties and behavior of “dense” matter, such as solids or liquids. Understanding the fundamental characteristics of matter has applications across all STEM, from developing stronger metals to crystallizing proteins for medical study. Some areas of study are superconductors, polymers, and quantum memory storage. Condensed matter research overlaps with chemistry, AMO, biophysics, and many other areas, making it the largest and most active field of contemporary physics.
+Condensed matter is the study of the physical properties and behavior of ''dense” matter'', such as solids or liquids. Understanding the fundamental characteristics of matter has applications across all STEM, from developing stronger metals to crystallizing proteins for medical study. Some areas of study are superconductors, polymers, and quantum memory storage. Condensed matter research overlaps with chemistry, AMO, biophysics, and many other areas, making it the largest and most active field of contemporary physics.
 
 Experimental and device research is typically hands-on, with many opportunities to work in a lab. Undergraduate work may entail building and/or calibrating experimental equipment, synthesizing materials needed for study, or observing materials under stress or other extreme conditions. Theoretical condensed matter research applies laws from quantum mechanics, nuclear/particle physics, thermodynamics, and more to construct models of matter under various conditions. Undergraduates participate in building these models through evaluating numerical computation code and comparing differential solutions.  
 
