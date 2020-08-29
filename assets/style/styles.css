@@ -217,5 +217,6 @@ a {
 /* Posts */
 .post {
     text-decoration: none !important;
+    color: black;
 }
 
