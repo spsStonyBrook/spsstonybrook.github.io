@@ -220,3 +220,7 @@ a {
     color: black;
 }
 
+.post-snippet > h2 {
+    text-decoration: underline dotted !important;
+    text-decoration-skip-ink: none !important;
+}
