@@ -9,7 +9,7 @@ body {
 }
 
 a {
-    color: #55698C;
+    color: #74b6e6;
     font-weight: bold;
     text-decoration: none;
 }
@@ -83,6 +83,10 @@ a {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+a.stacks {
+    color: #55698C;
 }
 
 @media screen and (max-width: 600px) {
@@ -175,6 +179,12 @@ a {
 .grid-20-80 {
     display: grid;
     grid-template-columns: 20% 80%;
+    font-size: 18px;
+}
+
+.grid-50-50 {
+    display: grid;
+    grid-template-columns: 50% 50%;
     font-size: 18px;
 }
 
