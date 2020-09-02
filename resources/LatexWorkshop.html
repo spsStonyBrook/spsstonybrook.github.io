@@ -60,7 +60,7 @@
         <p>Simply put, it makes life easier. Juxtaposed to many word processors, \(\LaTeX\) just works; after learning what you should type, it's not very often you have to change anything for it to render nicely, it's already nice. Instead of taking ten minutes to type the wave equation, it takes ten seconds and looks great. In order to render \[\nabla^2 f = \frac{1}{c^2} \frac{\partial^2 f}{\partial t^2},\] we just need to type \[\tt{\backslash nabla\verb!^! 2\, f = \backslash frac\{1\}\{c\verb!^!2\} \backslash frac\{\backslash partial\verb!^!2 \, f\}\{\backslash partial \, t\verb!^!2\}}.\]</p>
 
         <h2>Packages</h2>
-        <p>One of the most miraculous aspects of \(\LaTeX\) is the community surrounding it. While some things are somewhat combersome in straight-up \(\LaTeX\), we can use some other people's code to make our lives easier with <em>packages</em>.</p>
+        <p>One of the most miraculous aspects of \(\LaTeX\) is the community surrounding it. While some things are somewhat cumbersome in straight-up \(\LaTeX\), we can use some other people's code to make our lives easier with <em>packages</em>.</p>
 
         <p>At the top of the reference document, you'll see a number of packages being used. Things like <tt>graphicx</tt> make inserting figures easy, while other packages like <tt>siunitx</tt> help make the process of writing out units much easier.</p>
 
@@ -96,7 +96,7 @@
         </div>
         <p>Obviously, typesetting homework is nice; if nothing else it makes your work easier to read for the TA. But here you'll have to show your work! You can do this sort of thing with the <tt>align</tt> environment.</p>
         <div class="grid-50-50">
-            <textarea class="alignInt" cols="30" rows="10">>\begin{align}
+            <textarea class="alignInt" cols="30" rows="10">\begin{align}
     U_0 &= 2 \sum_{n \leq n_F} \epsilon_n \\
     &= \pi \int_0^{n_F}dn\, n^2 \epsilon_n \\
     &= \frac{\pi^3}{2m} \left(\frac{\hbar}{L}\right)^2 \int_0^{n_F} dn\, n^4.
@@ -109,9 +109,13 @@
                 \end{align}\]</div>
         </div>
         <h2>Figures</h2>
+        Unfortunately, it's not really possible to make this editable in a website. Instead, we recommend you check out the accompanying file in Overleaf and play around there. Some notes are provided for completeness.
         <h2>Macros</h2>
+        There's a package for almost everything, but nonetheless it's often convenient to define some macros. For example, typing <tt>\mathbb{R}</tt> for the real numbers \(\mathbb{R}\) can get really cumbersome really quickly. But defining a macro so that we just need to type <tt>\R</tt> is way less typing.
         <h2>Document Settings</h2>
+        Very few documents actually look like the default article class in LaTeX. But in the header we can specify some changes to get the pages how we want to look. Also, use a template. Maybe I'll make one available.
         <h2>Concluding Remarks</h2>
+        \(\LaTeX\) rules, Microsoft Word drools.
     </div>
     <script>
         $('textarea').bind('input propertychange', function() {
