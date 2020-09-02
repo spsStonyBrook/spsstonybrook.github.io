@@ -178,6 +178,12 @@ a {
     font-size: 18px;
 }
 
+.grid-50-50 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 18px;
+}
+
 .grid-20-80 > div {
     padding-left: 2em;
 }
