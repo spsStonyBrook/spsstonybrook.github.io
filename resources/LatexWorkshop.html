@@ -51,9 +51,9 @@
 
     <div class="container clearfix">
         <h1>\(\LaTeX\) Workshop</h1>
-        These were written to accompany a GBM tutorial by Mike Wahl and Dan Waxman, but hopefully should be a decent reference in the future regardless. We'll also embed a recording of the meeting later. There's a corresponding document <a href="">here</a>, but most examples can be edited from this webpage directly.
+        These were written to accompany a GBM tutorial by Mike Wahl and Dan Waxman, but hopefully should be a decent reference in the future regardless. We'll also embed a recording of the meeting later. There's a corresponding document <a href="https://www.overleaf.com/read/byvwqcyffffp">here</a>, but most examples can be edited from this webpage directly. This differs a bit from the actual presentaton and the corresponding document due to some limitations, but is mostly the same.
         <h2>What is \(\LaTeX\)?</h2>
-        <p>\(\LaTeX\) (pronounced to rhyme with "tech") is a markup language, similar in theory to HTML/CSS. Just as the internet is built upon HTML/CSS, high-quality typeset papers in math and physics are often built upon \(\LaTeX\). It builts upon \(\TeX\), built by Don Knuth in the late 70s and 80s, after getting annoyed with the typsetting issues writing the first few volumes of <em>The Art of Computer Programming.</em></p>
+        <p>\(\LaTeX\) (pronounced to rhyme with "tech") is a markup language, similar in theory to HTML/CSS. Just as the internet is built upon HTML/CSS, high-quality typeset papers in math and physics are often built upon \(\LaTeX\). It builds upon \(\TeX\), built by Don Knuth in the late 70s and 80s, after getting annoyed with the typesetting issues writing the first few volumes of <em>The Art of Computer Programming.</em></p>
         <p>Somewhat confusingly, we type out our documents in \(\LaTeX\), then pass it to a program named something similar like <tt>pdfTeX</tt>, which converts our markup into a pretty, readable format. In physics classes, most people end up using \(\LaTeX\) for professional-looking lab reports, but people also make <a href="https://web.evanchen.cc/coursework.html">beautiful lecture notes</a> and <a href="https://github.com/posquit0/Awesome-CV">awesome resumes.</a></p>
 
         <h2>Why do we use it?</h2>
@@ -65,7 +65,9 @@
         <p>At the top of the reference document, you'll see a number of packages being used. Things like <tt>graphicx</tt> make inserting figures easy, while other packages like <tt>siunitx</tt> help make the process of writing out units much easier.</p>
 
         <h2>General Navigation</h2>
-        Something about text mode vs. math mode, counters, etc.
+        <p>Like anything else, there's some general structure to \(\LaTeX\) documents: we put stuff about how we want our document to look in the <emph>preamble,</emph> then the rest of our code in the body. There's also math mode and text mode; in text mode you type normally, but in math mode, which you access by typing <tt>$stuff here$</tt>, you can type math expressions like we'll see below.</p>
+        
+        <p>In \(\LaTeX\), there's also environments, which we'll explore later as well.</p>
 
         <h2>Equations</h2>
         <p>Finally, the place where \(\LaTeX\) shines. It shines so bright that when Microsoft was looking to make writing equations easier, <a href="https://support.microsoft.com/en-us/office/linear-format-equations-using-unicodemath-and-latex-in-word-2e00618d-b1fd-49d8-8cb4-8d17f25754f8">they implemented many of the basic \(\LaTeX\) commands</a>. To help out here, we've made it so you can edit stuff in here and see the results live. Feel free to edit any of the examples below and see the results!</p>
@@ -112,6 +114,35 @@
         <h2>Figures</h2>
         <p>Unfortunately, it's not really possible to make this editable in a website. Instead, we recommend you check out the accompanying file in Overleaf and play around there. Some notes are provided for completeness.</p>
 
+        <p>Figures are nothing new, and unfortunately LaTeX can complicate what is otherwise a simple matter of placing a picture on the page. First off, we must add the <tt>graphicx</tt> package, which will let us use outside images. Next, we need to specify our graphics path with <tt>\graphicspath{}</tt>. To keep things tidy, we've created two folders in overleaf, one labeled images and the other plots, hence why our statement includes both of them: <tt>\graphicspath{{./images/} {./plots/}}</tt> . When including a picture, it is best practice to place it inside the <tt>figure</tt> environment, and this is where the funky business can begin.</p>
+
+        <p>\(\LaTeX\) floats are weird. They're intended to make figures and tables as unobtrusive as possible, but they have a habit of ignoring where you want them to go. Default LaTeX includes the <tt>[h]</tt> parameter to specify "here", but in practice, it is best to use <tt>[H]</tt> from the <tt>float</tt> package.</p>
+        
+        <div class="grid-50-50">
+            <textarea readonly cols="30" rows="10">\begin{figure}
+    \centering
+    \includegraphics{Intro Full Adder}
+    \caption{Keep reading, ignore for now}
+    \label{fig:FA}
+\end{figure}</textarea>
+
+            <div><img src="IntroFullAdder.png" height="300px"></div>
+        </div>
+        
+        <div class="grid-50-50">
+            <textarea readonly cols="30" rows="10">\begin{figure}[H]
+    \centering
+    \includegraphics[width=10cm]{loc}
+    \caption{Notice how this appears in the place you'd expect it to: below the paragraph in the code. The other figure wanders off seemingly without reason.}
+    \label{fig:location}
+\end{figure}</textarea>
+
+            <div><img src="loc.png" height="300px"></div>
+        </div>
+        
+        <p>There are other letters which can go in place of <tt>[H]</tt> and have different effects, but those are rarely useful. If you need to use them, Google is your friend. Also of note is image sizes. You'll frequently run into errors where you'll need to resize the image to fit it on the page. This can be done several ways, but mainly with the <tt>[width= x cm]</tt> option. Finally, you may be wondering what the <tt>\label{}</tt> statement means. This lets us reference certain figures and tables without worrying about if our future edits to the document change the order or page where the given figure appears. For example, to reference the table we saw earlier, we can write the following: <tt>see Table~\ref{tab:IV} on page~\pageref{tab:IV} for more information.</tt> It also lets us list all of the tables or figures with a single command, should we need it in an appendix or such.</p>
+        
+        <p>Tables are somewhat annoying, but there are tools to help us out. In the talk, Mike talks about a Google Sheets add-on <tt>LatexKit</tt>, which should be useful for you in your labs.</p>
 
         <h2>Macros</h2>
         <p>There's a package for almost everything, but nonetheless it's often convenient to define some macros. For example, typing <tt>\mathbb{R}</tt> for the real numbers \(\mathbb{R}\) can get really cumbersome really quickly. But defining a macro so that we just need to type <tt>\R</tt> is way less typing.</p>
@@ -127,13 +158,13 @@
         </div>
 
 
-    <p>This is a super useful macro, and usually one of the first people use, but also kind of trivial. We can also look at some slightly more complicated behavior, like writing down partial derivatives. We can use the <a href="https://ctan.org/pkg/cool"><tt>cool</tt></a> package to get nice and convenient partial derivatives, but as an exercise let's develop a macro for it now.</p>
+        <p>This is a super useful macro, and usually one of the first people use, but also kind of trivial. We can also look at some slightly more complicated behavior, like writing down partial derivatives. We can use the <a href="https://ctan.org/pkg/cool"><tt>cool</tt></a> package to get nice and convenient partial derivatives, but as an exercise let's develop a macro for it now.</p>
 
-    <p>For this, we're going to now need arguments in our macro; namely, we're going to create an optional argument for the numerator, an a required argument for the denominator. We won't worry about higher order partials right now, but again check out the aforementioned package for mixed partials and smart spacing.</p>
+        <p>For this, we're going to now need arguments in our macro; namely, we're going to create an optional argument for the numerator, an a required argument for the denominator. We won't worry about higher order partials right now, but again check out the aforementioned package for mixed partials and smart spacing.</p>
 
 
-    <div class="grid-50-50">
-        <textarea class="partial" cols="30" rows="10">\newcommand{\pder}[2][]{\frac{\partial#1}{\partial#2}} % https://tex.stackexchange.com/questions/29179/partial-derivative-macro
+        <div class="grid-50-50">
+            <textarea class="partial" cols="30" rows="10">\newcommand{\pder}[2][]{\frac{\partial#1}{\partial#2}} % https://tex.stackexchange.com/questions/29179/partial-derivative-macro
 \newcommand{\der}[2][]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
 
 \begin{cases} 
@@ -141,26 +172,26 @@
     \pder[H]{p} = \der[q]{t} 
 \end{cases}.</textarea>
 
-        <div id="partial">\[\newcommand{\pder}[2][]{\frac{\partial#1}{\partial#2}} % https://tex.stackexchange.com/questions/29179/partial-derivative-macro
-\newcommand{\der}[2][]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+            <div id="partial">\[\newcommand{\pder}[2][]{\frac{\partial#1}{\partial#2}} % https://tex.stackexchange.com/questions/29179/partial-derivative-macro
+                \newcommand{\der}[2][]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
 
-\begin{cases} \pder[H]{q} = -\der[p]{t} \\ \pder[H]{p} = \der[q]{t} \end{cases}.\]</div>
-    </div>
-        
-    <p>On top of all this, we can also override commands usiing <tt>\renewcommand</tt>. For example, it's common to type out vectors as \(\mathbf{v}\) instead of \(\vec{v}\). We can then override <tt>\vec</tt> so that, with one line, all of our vectors are changed.</p>
-        
-    <div class="grid-50-50">
-        <textarea class="vec" cols="30" rows="10">\renewcommand{\vec}[1]{\mathbf{#1}}
+                \begin{cases} \pder[H]{q} = -\der[p]{t} \\ \pder[H]{p} = \der[q]{t} \end{cases}.\]</div>
+        </div>
+
+        <p>On top of all this, we can also override commands usiing <tt>\renewcommand</tt>. For example, it's common to type out vectors as \(\mathbf{v}\) instead of \(\vec{v}\). We can then override <tt>\vec</tt> so that, with one line, all of our vectors are changed.</p>
+
+        <div class="grid-50-50">
+            <textarea class="vec" cols="30" rows="10">\renewcommand{\vec}[1]{\mathbf{#1}}
 \int_\gamma \vec{F} \, d\vec{r} = \iint_S (\nabla \times \vec{F}) \cdot d\vec{S}.</textarea>
 
-        <div id="vec">\[\renewcommand{\vec}[1]{\mathbf{#1}}
+            <div id="vec">\[\renewcommand{\vec}[1]{\mathbf{#1}}
 \int_\gamma \vec{F} \, d\vec{r} = \iint_S (\nabla \times \vec{F}) \cdot d\vec{S}.\]</div>
     </div>
         
     <p>Beyond this, we won't have a ton of time for a one hour workshop, but you can find a more complete reference <a href="https://en.wikibooks.org/wiki/LaTeX/Macros">here.</a></p>
 
     <h2>Document Settings</h2>
-    Very few documents actually look like the default article class in LaTeX. But in the header we can specify some changes to get the pages how we want to look. Also, use a template. Maybe I'll make one available.
+    Very few documents actually look like the default article class in LaTeX. But in the header we can specify some changes to get the pages how we want to look. Also, use a template. Maybe I'll make one available and link it here. For this, the <tt>geometry</tt> package is a useful tool though.
     
     
     <h2>Concluding Remarks</h2>
