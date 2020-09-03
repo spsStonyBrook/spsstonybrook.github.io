@@ -77,7 +77,7 @@
 
             <div id="integral">\[S = \int_{t_0}^{t_1} S(q, \dot{q}, t) \, dt.\]</div>
         </div>
-        <p>There's a few little useful tricks in the last exmaple which are worth exploring. For one, it's not too hard to see that writing <tt>\int_t_0^t_1</tt> would be terrible ambiguous, which computers hate. So when you want to <em>group</em> things together in \(\LaTeX\), you can just slap on some curly braces. </p>
+        <p>There's a few little useful tricks in the last example which are worth exploring. For one, it's not too hard to see that writing <tt>\int_t_0^t_1</tt> would be terrible ambiguous, which computers hate. So when you want to <em>group</em> things together in \(\LaTeX\), you can just slap on some curly braces. </p>
 
         <p>For spacing purposes, we added <tt>\,</tt> before the differential \(dt\) as well --- you can play around with this above to see what the difference looks like. </p>
 
@@ -108,15 +108,55 @@
                 &= \frac{\pi^3}{2m} \left(\frac{\hbar}{L}\right)^2 \int_0^{n_F} dn\, n^4.
                 \end{align}\]</div>
         </div>
+
         <h2>Figures</h2>
-        Unfortunately, it's not really possible to make this editable in a website. Instead, we recommend you check out the accompanying file in Overleaf and play around there. Some notes are provided for completeness.
+        <p>Unfortunately, it's not really possible to make this editable in a website. Instead, we recommend you check out the accompanying file in Overleaf and play around there. Some notes are provided for completeness.</p>
+
+
         <h2>Macros</h2>
-        There's a package for almost everything, but nonetheless it's often convenient to define some macros. For example, typing <tt>\mathbb{R}</tt> for the real numbers \(\mathbb{R}\) can get really cumbersome really quickly. But defining a macro so that we just need to type <tt>\R</tt> is way less typing.
-        <h2>Document Settings</h2>
-        Very few documents actually look like the default article class in LaTeX. But in the header we can specify some changes to get the pages how we want to look. Also, use a template. Maybe I'll make one available.
-        <h2>Concluding Remarks</h2>
-        \(\LaTeX\) rules, Microsoft Word drools.
+        <p>There's a package for almost everything, but nonetheless it's often convenient to define some macros. For example, typing <tt>\mathbb{R}</tt> for the real numbers \(\mathbb{R}\) can get really cumbersome really quickly. But defining a macro so that we just need to type <tt>\R</tt> is way less typing.</p>
+
+        <p>The way we do this is by specifying commands in our preamble. For example, if we'd want to use <tt>\R</tt> as shorthand for <tt>\mathbb{R}</tt>, we would write <tt>\newcommand{\R}{\mathbb{R}}</tt>.</p>
+
+        <div class="grid-50-50">
+            <textarea class="realMacro" cols="30" rows="10">\newcommand{\R}{\mathbb{R}}
+\int_\R \exp(-x^2) \, dx = \sqrt{\pi}.</textarea>
+
+            <div id="realMacro">\[\newcommand{\R}{\mathbb{R}}
+                \int_\R \exp(-x^2) \, dx = \sqrt{\pi}.\]</div>
+        </div>
+
+
+    <p>This is a super useful macro, and usually one of the first people use, but also kind of trivial. We can also look at some slightly more complicated behavior, like writing down partial derivatives. We can use the <a href="https://ctan.org/pkg/cool"><tt>cool</tt></a> package to get nice and convenient partial derivatives, but as an exercise let's develop a macro for it now.</p>
+
+    <p>For this, we're going to now need arguments in our macro; namely, we're going to create an optional argument for the numerator, an a required argument for the denominator. We won't worry about higher order partials right now, but again check out the aforementioned package for mixed partials and smart spacing.</p>
+
+
+    <div class="grid-50-50">
+        <textarea class="partial" cols="30" rows="10">\newcommand{\pder}[2][]{\frac{\partial#1}{\partial#2}} % https://tex.stackexchange.com/questions/29179/partial-derivative-macro
+\newcommand{\der}[2][]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+
+\begin{cases} 
+    \pder[H]{q} = -\der[p]{t} \\ 
+    \pder[H]{p} = \der[q]{t} 
+\end{cases}.</textarea>
+
+        <div id="partial">\[\newcommand{\pder}[2][]{\frac{\partial#1}{\partial#2}} % https://tex.stackexchange.com/questions/29179/partial-derivative-macro
+\newcommand{\der}[2][]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+
+\begin{cases} \pder[H]{q} = -\der[p]{t} \\ \pder[H]{p} = \der[q]{t} \end{cases}.\]</div>
     </div>
+        
+    <p>Beyond this, we won't have a ton of time for a one hour workshop, but you can find a more complete reference <a href="https://en.wikibooks.org/wiki/LaTeX/Macros">here.</a></p>
+
+    <h2>Document Settings</h2>
+    Very few documents actually look like the default article class in LaTeX. But in the header we can specify some changes to get the pages how we want to look. Also, use a template. Maybe I'll make one available.
+    
+    
+    <h2>Concluding Remarks</h2>
+    \(\LaTeX\) rules, Microsoft Word drools.
+    </div>
+
     <script>
         $('textarea').bind('input propertychange', function() {
             $("#" + this.className).text("\\[" + this.value + "\\]");
