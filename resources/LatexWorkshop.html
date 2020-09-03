@@ -147,6 +147,16 @@
 \begin{cases} \pder[H]{q} = -\der[p]{t} \\ \pder[H]{p} = \der[q]{t} \end{cases}.\]</div>
     </div>
         
+    <p>On top of all this, we can also override commands usiing <tt>\renewcommand</tt>. For example, it's common to type out vectors as \(\mathbf{v}\) instead of \(\vec{v}\). We can then override <tt>\vec</tt> so that, with one line, all of our vectors are changed.</p>
+        
+    <div class="grid-50-50">
+        <textarea class="vec" cols="30" rows="10">\renewcommand{\vec}[1]{\mathbf{#1}}
+\int_\gamma \vec{F} \, d\vec{r} = \iint_S (\nabla \times \vec{F}) \cdot d\vec{S}.</textarea>
+
+        <div id="vec">\[\renewcommand{\vec}[1]{\mathbf{#1}}
+\int_\gamma \vec{F} \, d\vec{r} = \iint_S (\nabla \times \vec{F}) \cdot d\vec{S}.\]</div>
+    </div>
+        
     <p>Beyond this, we won't have a ton of time for a one hour workshop, but you can find a more complete reference <a href="https://en.wikibooks.org/wiki/LaTeX/Macros">here.</a></p>
 
     <h2>Document Settings</h2>
