@@ -66,7 +66,7 @@
 
         <h2>General Navigation</h2>
         <p>Like anything else, there's some general structure to \(\LaTeX\) documents: we put stuff about how we want our document to look in the <emph>preamble,</emph> then the rest of our code in the body. There's also math mode and text mode; in text mode you type normally, but in math mode, which you access by typing <tt>$stuff here$</tt>, you can type math expressions like we'll see below.</p>
-        
+
         <p>In \(\LaTeX\), there's also environments, which we'll explore later as well.</p>
 
         <h2>Equations</h2>
@@ -117,7 +117,7 @@
         <p>Figures are nothing new, and unfortunately LaTeX can complicate what is otherwise a simple matter of placing a picture on the page. First off, we must add the <tt>graphicx</tt> package, which will let us use outside images. Next, we need to specify our graphics path with <tt>\graphicspath{}</tt>. To keep things tidy, we've created two folders in overleaf, one labeled images and the other plots, hence why our statement includes both of them: <tt>\graphicspath{{./images/} {./plots/}}</tt> . When including a picture, it is best practice to place it inside the <tt>figure</tt> environment, and this is where the funky business can begin.</p>
 
         <p>\(\LaTeX\) floats are weird. They're intended to make figures and tables as unobtrusive as possible, but they have a habit of ignoring where you want them to go. Default LaTeX includes the <tt>[h]</tt> parameter to specify "here", but in practice, it is best to use <tt>[H]</tt> from the <tt>float</tt> package.</p>
-        
+
         <div class="grid-50-50">
             <textarea readonly cols="30" rows="10">\begin{figure}
     \centering
@@ -126,9 +126,9 @@
     \label{fig:FA}
 \end{figure}</textarea>
 
-            <div><img src="IntroFullAdder.png" height="300px"></div>
+            <div style="text-align: center;"><img src="IntroFullAdder.png" height="300px"></div>
         </div>
-        
+
         <div class="grid-50-50">
             <textarea readonly cols="30" rows="10">\begin{figure}[H]
     \centering
@@ -137,11 +137,11 @@
     \label{fig:location}
 \end{figure}</textarea>
 
-            <div><img src="loc.png" height="300px"></div>
+            <div style="text-align: center;"><img src="loc.png" height="300px"></div>
         </div>
-        
+
         <p>There are other letters which can go in place of <tt>[H]</tt> and have different effects, but those are rarely useful. If you need to use them, Google is your friend. Also of note is image sizes. You'll frequently run into errors where you'll need to resize the image to fit it on the page. This can be done several ways, but mainly with the <tt>[width= x cm]</tt> option. Finally, you may be wondering what the <tt>\label{}</tt> statement means. This lets us reference certain figures and tables without worrying about if our future edits to the document change the order or page where the given figure appears. For example, to reference the table we saw earlier, we can write the following: <tt>see Table~\ref{tab:IV} on page~\pageref{tab:IV} for more information.</tt> It also lets us list all of the tables or figures with a single command, should we need it in an appendix or such.</p>
-        
+
         <p>Tables are somewhat annoying, but there are tools to help us out. In the talk, Mike talks about a Google Sheets add-on <tt>LatexKit</tt>, which should be useful for you in your labs.</p>
 
         <h2>Macros</h2>
