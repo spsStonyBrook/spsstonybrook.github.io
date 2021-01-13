@@ -6,11 +6,11 @@ There are many paid internships out there if you are looking to gain research ex
 
 The Undergraduate Research and Creative Activities (URECA) Department funds Stony Brook students doing full-time faculty mentored research over the summer. Applicants must seek out a faculty mentor prior to applying. There are two programs to choose from: Explorations in STEM, which is geared towards freshmen/sophomores and includes weekly professional development workshops, and URECA, which is geared towards experienced researchers. You can find a link to their website [here.](https://www.stonybrook.edu/commcms/ureca/summer/urecasummer.php)
 
-Many universities have their own university-funded programs similar to URECA/Explorations in STEM. Visit individual universities' undergraduate research or physics research websites to learn more. 
+Many universities have their own university-funded programs similar to URECA/Explorations in STEM. Visit individual universities' undergraduate research or physics research websites to learn more.
 
 ### Research Experience for Undergraduates (REUs)
 
-REU programs are hosted by individual universities with funding from the National Science Foundation (NSF). US Citizenship or Permanent Residency is required for eligibility. You can find a link to NSF's search engine of Physics REUs [here.](https://www.nsf.gov/crssprgm/reu/list_result.jsp?unitid=69)
+REU programs are hosted by individual universities with funding from the National Science Foundation (NSF). US Citizenship or Permanent Residency is required for eligibility. You can find a link to NSF's search engine of Physics REUs [here.](https://www.nsf.gov/crssprgm/reu/list_result.jsp?unitid=69) Stony Brook also has their own REU program, whose link you can find [here.](https://www.stonybrook.edu/commcms/physics-reu/)
 
 ### Science Undergraduate Laboratory Internships (SULI)
 
