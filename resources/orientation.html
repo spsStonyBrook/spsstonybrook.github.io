@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="eng-us">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!-- Favicon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/ico/favicon-16x16.png">
+    <link rel="manifest" href="/assets/ico/site.webmanifest">
+    <link rel="mask-icon" href="/assets/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Info & Custom Style -->
+    <title>Stony Brook Society of Physics Students</title>
+    <link rel="stylesheet" href="/assets/style/styles.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@700&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Carousel library -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Logos -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <nav class="nav-bar clearfix" id="topnav">
+        <div class="nav-container">
+            <img src="/assets/media/logo.png" id="logo">
+            <ul>
+                <a href="javascript:void(0);" class="stacks" onclick="menu()">
+                    <i class="fa fa-bars"></i></a>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/resources.html">Resources</a></li>
+                <li><a href="/schedule.html">Schedule</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container clearfix"><h1>Orientation Checklist</h1>
+
+<p>Orientation and class selection can be hectic and confusing, so we've compiled a list of things you might find useful to know!</p>
+
+<h2>General</h2>
+
+<ol>
+<li><strong>The schedule you create at orientation is not binding!</strong> Your schedule can be changed on SOLAR anytime up until the end of the second week of classes each semester. Instructions on how to navigate SOLAR and course management can be found <a href="https://it.stonybrook.edu/services/solar/solar-for-students">here.</a></li>
+<li><strong>There are two sets of curricula you will need to complete to earn your degree: the Stony Brook Curriculum (SBC) and your primary major (Physics, presumably!).</strong> The SBC requires students to take a diverse range of classes, each with a course attribute, such as language (LANG) or technology (TECH). You can find a full description of the SBC requirements <a href="https://www.stonybrook.edu/sb/bulletin/current/policiesandregulations/degree_requirements/categoriesandlearningoutcomes.php">here.</a> The Physics major requirements are listed <a href="https://www.stonybrook.edu/sb/bulletin/current/academicprograms/phy/degreesandrequirements.php">here.</a> Some PHY courses fulfill SBC requirements, but not all. When planning for the long-term, be sure to balance both SBC and major requirements each semester!</li>
+<li><strong>Understand your scholarship requirements.</strong> Some scholarships, including TAP, have strict requirements on how many degree-applicable credits you must take per semester. Degree-applicable typically means applying towards either SBCs or your primary major. If this applies to you, you will need to be careful about taking too many courses in one semester or transferring too many credits from high school, else you run out of degree-applicable credits later. Information on common forms of financial aid for SBU students can be found <a href="https://www.stonybrook.edu/commcms/finaid/undergraduate/types_of_aid/">here.</a></li>
+</ol>
+
+<h2>For Incoming First Year Students</h2>
+
+<ol>
+<li>In addition to your Introductory Physics Course (PHY 125/126, PHY 131, or PHY 141), <strong>make sure you sign up for PHY 133!</strong> There are two introductory lab courses: PHY 133, which is typically taken in the fall, and PHY 134, which is typically taken in the spring. Both in-person and online sections of the lab are available. There is no overwhelming advantage to taking one over the other, although the online section requires the purchase of a lab kit. Be sure to add it to your schedule as soon as you can, because seats fill up fast!</li>
+<li><strong>Consider spacing out your SBCs.</strong> Many seniors find themselves running out of courses to take in their final semesters. Others wish they saved some SBCs for their difficult junior/senior year semesters, rather than trying to get them out of the way too quickly.
+3.</li>
+</ol>
+
+<h2>For Transfer Students</h2>
+
+<ol>
+<li>For international physics and math courses, ask our undergraduate program director, Dr. Robert McCarthy (robert.mccarthy@stonybrook.edu), if your credits can be applied towards an SBU degree before paying for any evaluations. It could save hundreds of dollars!</li>
+</ol>
+    </div>
+    <script>
+        function menu() {
+            var x = document.getElementById("topnav");
+            if (x.className === "nav-bar clearfix") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav-bar clearfix";
+            }
+        }
+
+    </script>
+</body>
+</html>
