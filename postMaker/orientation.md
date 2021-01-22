@@ -15,4 +15,4 @@ Orientation and class selection can be hectic and confusing, so we've compiled a
 
 ## For Transfer Students
 
-1. For international physics and math courses, ask our undergraduate program director, Dr. Robert McCarthy (robert.mccarthy@stonybrook.edu), if your credits can be applied towards an SBU degree before paying for any evaluations. It could save hundreds of dollars!
+1. For international physics and math courses, ask our undergraduate program director, Dr. Robert McCarthy (robert.mccarthy[at]stonybrook.edu), if your credits can be applied towards an SBU degree before paying for any evaluations. It could save hundreds of dollars!
