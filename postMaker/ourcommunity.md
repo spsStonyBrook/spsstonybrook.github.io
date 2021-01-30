@@ -9,8 +9,8 @@
 
 ## Clubs We Love
 
-1. [Astronomy Club](bit.ly/sbuastroclub)- Our sister organization, where every week you'll have the chance to learn about something new about the universe!
-2. [Math Club](https://you.stonybrook.edu/mathclub/)- Our distant cousin, with weekly presentations on everything from the hottest new theorems to careers in math and statistics.
-3. [RC Flying Club]- Design and fly planes and other hovercraft!
-4. [AIAA](https://stonybrook.campuslabs.com/engage/organization/aiaa-sbu)- For all your aero and astronautical needs.
-5. [SBU Rotaract](http://www.sburotaract.org/)- A chance to get involved in community service on and off campus.
+1. [Astronomy Club](bit.ly/sbuastroclub)- Our sister organization, where every week you'll have the chance to learn about something new about the universe and what we're doing to explore it!
+2. [Math Club](https://you.stonybrook.edu/mathclub/)- A community for anyone interested in mathematics at any level, with weekly presentations on everything from the newest discoveries in the field to careers in math and statistics.
+3. [RC Flying Club](https://www.instagram.com/rcflyingclub.sbu/)- Learn how to build and control remote-controlled aircraft!
+4. [American Institute of Aeronautics and Astronautics (AIAA)](https://stonybrook.campuslabs.com/engage/organization/aiaa-sbu)- Learn about the aerospace field and workforce through technical workshops, company tours, lecture series, and other social events.
+5. [SBU Rotaract](http://www.sburotaract.org/)- A chance to get involved in the local Stony Brook community through community service.
