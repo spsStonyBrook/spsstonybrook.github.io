@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="eng-us">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!-- Favicon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/ico/favicon-16x16.png">
+    <link rel="manifest" href="/assets/ico/site.webmanifest">
+    <link rel="mask-icon" href="/assets/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Info & Custom Style -->
+    <title>Stony Brook Society of Physics Students</title>
+    <link rel="stylesheet" href="/assets/style/styles.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@700&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Carousel library -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Logos -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <nav class="nav-bar clearfix" id="topnav">
+        <div class="nav-container">
+            <img src="/assets/media/logo.png" id="logo">
+            <ul>
+                <a href="javascript:void(0);" class="stacks" onclick="menu()">
+                    <i class="fa fa-bars"></i></a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Events</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="spsnational.html">SPS National</a></li>
+                <li><a href="contact.html">Join Us</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container clearfix">
+<h1>The Physics Writing Requirement</h1>
+
+<p>Each major at Stony Brook University includes a WRTD requirement. For the PHY Major, this is PHY 459: Writing Effectively in Physics- a zero credit course that consists of writing what is essentially a mini paper. The goal is to show you understand the fundamental physics of a topic and can demonstrate those properties in action, i.e. through an experiment or research. Students must select a physics or astronomy faculty member to be their supervisor, who guides them in writing the paper according to physics standards, then gives the paper approval once complete. The paper is then sent to the undergraduate program director for final approval. PHY 459 is most commonly completed in the spring semester of one's senior year.</p>
+
+<p>The absolute must-have components of the WRTD requirement are as follows: proper English grammar, references (to academic journal articles), and uncertainty analysis (error bars). References are typically used to explain the background physics needed to understand your main subject, or to explain where the methods used to obtain your results come from. Error bars must be incorporated in some form (even for simulated or theoretical work), as they demonstrate you understand the variability of your data and how precise your values are. Otherwise, there is no set structure to the report. Students will primarily depend on their chosen supervisor to guide them in what to include in the report, as it varies heavily based on the subject matter, as well as the year.</p>
+
+<p>The Astronomy Major WRTD requirement (AST 459) requires students to submit two papers to complete the course. If students are double-majoring in PHY and AST, the PHY 459 report can be used as one of the required AST 459 papers.</p>
+
+<p>There are three directions students have historically taken with PHY 459 requirement. For advice on additional avenues, consult the undergraduate program director.</p>
+
+<h3>Using Undergraduate Research</h3>
+
+<p>Many students turn their own research, either done previously or currently, into their PHY 459 report. Students do not have to be signed up for the research course (PHY 287/487) to use their work for PHY 459.</p>
+
+<p>If the research was performed outside of Stony Brook University (e.g. at an REU internship over the summer), students must still have the paper approved by an SBU faculty person, ideally (but not limited to) someone in the same field as your work. Note that any previously written reports of said research will likely need to be edited to meet PHY 459 standards.</p>
+
+<h3>Using a PHY 335: Junior Lab Experiment</h3>
+
+<p>Since the most important part of the WRTD requirement is analysis of data, it is possible to use any data collected during a PHY 335 experiment into a PHY 459 requirement. Students should think about how the data collected applies towards understanding electronics or instrumentation concepts, which relates on some level to broader physics subfields.</p>
+
+<p>If students use PHY 335 data, they <strong>must</strong> choose the professor they had for the course as their faculty supervisor.</p>
+
+<h3>Using a PHY 445: Senior Lab Experiment</h3>
+
+<p>Senior lab reports inherently contain much of the PHY 459 rubric in them, as well as clear direction on the fundamental physics being demonstrated. However, because PHY 445 experiments and reports are completed in lab partner pairs, there are several rules for using PHY 445 experiments for PHY 459.</p>
+
+<p>The senior lab experiment itself can still be completed with a partner. However, the PHY 459 WRTD requirement must be written entirely by you. Therefore, students <strong>cannot</strong> take a senior lab report, written in conjunction with a partner, and use it for PHY 459; it must be rewritten alone.</p>
+
+<p>Just like PHY 335, if students choose to use data collected during a senior lab experiment for their WRTD requirement, they must select their PHY 445 professor for their faculty supervisor.</p>
+    </div>
+    <script>
+        function menu() {
+            var x = document.getElementById("topnav");
+            if (x.className === "nav-bar clearfix") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav-bar clearfix";
+            }
+        }
+
+    </script>
+</body>
+</html>

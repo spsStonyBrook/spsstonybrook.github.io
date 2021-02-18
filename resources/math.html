@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="eng-us">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!-- Favicon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/ico/favicon-16x16.png">
+    <link rel="manifest" href="/assets/ico/site.webmanifest">
+    <link rel="mask-icon" href="/assets/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Info & Custom Style -->
+    <title>Stony Brook Society of Physics Students</title>
+    <link rel="stylesheet" href="/assets/style/styles.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@700&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Carousel library -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Logos -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <nav class="nav-bar clearfix" id="topnav">
+        <div class="nav-container">
+            <img src="/assets/media/logo.png" id="logo">
+            <ul>
+                <a href="javascript:void(0);" class="stacks" onclick="menu()">
+                    <i class="fa fa-bars"></i></a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Events</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="spsnational.html">SPS National</a></li>
+                <li><a href="contact.html">Join Us</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container clearfix">
+<h1>MAT versus AMS: What's the Difference?</h1>
+
+<p>Stony Brook University houses a Mathematics (MAT) Department within the College of Arts and Sciences, as well as an Applied Mathematics and Statistics (AMS) Department under the College of Engineering and Applied Science. In addition to providing numerous specialized upper-division courses, each department has their own approach to teaching the introductory math courses, Calculus I-IV and Linear Algebra, which all physics majors must take. We describe the difference in these approaches below. For information on what MAT/AMS courses are most useful for the PHY major, click <a href="SARA'S PAGE">here.</a></p>
+
+<h2>MAT Overview</h2>
+
+<p>MAT courses don't just teach you how to <em>do</em> math, they teach you <em>why</em> you can do math. It's not enough to say "1 + 1 = 2", we must prove it does first (the answer can be found in several hundred pages within the <em>Principia Mathematica</em>, making this a rather extreme example). MAT courses are largely characterized by the amount of class time spent on proofs: written arguments that show the statement in question is always true for any situation within the limits of the problem. At the introductory level, students are expected to understand the overall logic behind these proofs, and occasionally write short proofs themselves for homework or exams.</p>
+
+<p>Past the introductory level, MAT courses go into pure mathematics, focusing on theoretical, abstract understanding of functions and operators and how they interact with each other under different conditions and limitations. Students are expected to fully understand the proofs of these concepts, and write their own for homework and exams. Discussions of practical application (including physics) are usually limited. However, in upper-division and graduate level work, you may find these theoretical ideas integral to solving physics questions.</p>
+
+<p>The MAT major is approximately 40 credits, ~29 of which consist of courses covered by the PHY major. You can find a list of major and minor requirements <a href="https://www.stonybrook.edu/sb/bulletin/current/academicprograms/mat/degreesandrequirements.php">here.</a></p>
+
+<h2>AMS Overview</h2>
+
+<p>By contrast, AMS courses are entirely about how to do math and use it for a real-world problem. At the introductory level, the content learned is nearly identical to the MAT course sequences, though more class time is spent on examples and discussion of applications. Word problems are more common on homework and exams, as students are expected to figure out which aspects of a real-world situation correspond to mathematical concepts learned in class.</p>
+
+<p>At the upper-division level, AMS courses become very specialized. The major itself is intended for students going into math-heavy professions such as actuarial science, data science, and programming analysis, so each course teaches mathematical skills and techniques used on a daily basis in these careers. Within physics research, AMS content often applies towards data analysis, modeling, and simulation.</p>
+
+<p>The AMS major is approximately 46 credits, ~22 of which consist of courses covered by the PHY major (ask Department permission to count PHY 277 towards the computing course requirement). You can find a list of major and minor requirements <a href="https://www.stonybrook.edu/sb/bulletin/current/academicprograms/ams/degreesandrequirements.php">here.</a></p>
+    </div>
+    <script>
+        function menu() {
+            var x = document.getElementById("topnav");
+            if (x.className === "nav-bar clearfix") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav-bar clearfix";
+            }
+        }
+
+    </script>
+</body>
+</html>
