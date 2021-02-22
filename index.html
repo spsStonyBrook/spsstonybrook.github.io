@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="assets/style/styles.css">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- Carousel library -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -35,7 +36,7 @@
 <body>
     <nav class="nav-bar clearfix" id="topnav">
         <div class="nav-container">
-            <img src="assets/media/logo.png" id="logo">
+            <a href="/"><img src="assets/media/full_logo.png" id="logo"></a>
             <ul>
                 <a href="javascript:void(0);" class="stacks" onclick="menu()">
                     <i class="fa fa-bars"></i></a>
@@ -51,6 +52,13 @@
     </nav>
 
     <div class="container clearfix">
+        
+        <div class="circles">
+            <div class="circle"><h3>Our Mission</h3> <img src="assets/media/mission.png"></div>
+            <div class="circle"><h3>Our Community</h3> <img src="assets/media/community.png"></div>
+            <div class="circle"><h3>New Students</h3> <img src="assets/media/new_students.png"></div>
+            <div class="circle"><h3>Schedule</h3> <img src="assets/media/schedule.png"></div>
+        </div>
         <h1>Welcome to SPS Stony Brook</h1>
 
         Our chapter continually serves our community by increasing engagement and efficacy in physics. We run outreach programs, collaborative workshops, and host talks by students and professors alike.
@@ -83,4 +91,5 @@
 
     </script>
 </body>
+
 </html>
