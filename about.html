@@ -16,10 +16,13 @@
 
     <!-- Info & Custom Style -->
     <title>Stony Brook Society of Physics Students</title>
+    <meta name="keywords" content="Stony Brook, Physics, SPS, Society of Physics Students, Club">
+    <meta name="description" content="An undergraduate club for exploring the physics major at SBU">
     <link rel="stylesheet" href="assets/style/styles.css">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- Carousel library -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -27,61 +30,77 @@
 
     <!-- Logos -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
 </head>
 
 <body>
-    <nav class="nav-bar clearfix" id="topnav">
-        <div class="nav-container">
-            <img src="assets/media/logo.png" id="logo">
+    <div class="actual-container">
+        <nav class="nav-bar clearfix" id="topnav">
+            <div class="nav-container">
+                <a class="logo" href="/">
+                    <picture>
+                        <source media="(max-width: 1150px)" srcset="assets/media/logo.png">
+                        <source media="(min-width: 1151px)" srcset="assets/media/full_logo.png">
+                        <img src="assets/media/logo.png" id="logo"></img>
+                    </picture>
+                </a>
+                <ul>
+                    <a href="javascript:void(0);" class="stacks" onclick="menu()">
+                        <i class="fa fa-bars"></i></a>
+                    <li id="home"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="schedule.html">Events</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="spsnational.html">SPS National</a></li>
+                    <li><a href="contact.html">Join Us</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container clearfix">
+
+            <h1>About Us</h1>
+            <h2>Stony Brook Chapter</h2>
+            <p>
+                The Stony Brook Chapter of the Society of Physics Students aims to foster the
+                academic, professional, and social growth of its members by:</p>
             <ul>
-                <a href="javascript:void(0);" class="stacks" onclick="menu()">
-                    <i class="fa fa-bars"></i></a>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="schedule.html">Events</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="spsnational.html">SPS National</a></li>
-                <li><a href="contact.html">Join Us</a></li>
-
+                <li>Providing a welcoming undergraduate support network for an active, engaged,
+                    and diverse membership</li>
+                <li>Disseminating physics research, especially that conducted at Stony Brook
+                    University, through undergraduate level lectures and demonstrations</li>
+                <li>Advancing career development by hosting training workshops and promoting
+                    opportunities for success</li>
+                <li>Encouraging interest in physics in our local communities through effective
+                    physics education</li>
             </ul>
+
+
+            <h3>Our Mission</h3>
+            <p>Our Mission, as written in our Constitution, is: </p>
+            <ul>
+                <li>To encourage all students interested in the Fields of Physics</li>
+                <li>To facilitate the professional development of all members</li>
+                <li>To advance the local community’s interest in Physics</li>
+                <li>To develop a community within the student body who themselves demonstrate
+                    the core values of SPS</li>
+            </ul>
+
+            <p>We seek to carry out this mission through a combination of regularly-scheduled
+                meetings and extemporaneous projects designed to contribute to personal and
+                professional development; these often taking the form of invited speakers and
+                student workshops, as well as campus and community service events. When combined
+                with our unique culture, they serve to make our organization a central figure in the
+                campus life of physics majors during their time at Stony Brook University.</p>
         </div>
-    </nav>
-    <div class="container clearfix">
-
-        <h1>About Us</h1>
-        <h2>Stony Brook Chapter</h2>
-        <p>
-            The Stony Brook Chapter of the Society of Physics Students aims to foster the
-            academic, professional, and social growth of its members by:</p>
-        <ul>
-            <li>Providing a welcoming undergraduate support network for an active, engaged,
-                and diverse membership</li>
-            <li>Disseminating physics research, especially that conducted at Stony Brook
-                University, through undergraduate level lectures and demonstrations</li>
-            <li>Advancing career development by hosting training workshops and promoting
-                opportunities for success</li>
-            <li>Encouraging interest in physics in our local communities through effective
-                physics education</li>
-        </ul>
-
-
-        <h3>Our Mission</h3>
-        <p>Our Mission, as written in our Constitution, is: </p>
-        <ul>
-            <li>To encourage all students interested in the Fields of Physics</li>
-            <li>To facilitate the professional development of all members</li>
-            <li>To advance the local community’s interest in Physics</li>
-            <li>To develop a community within the student body who themselves demonstrate
-                the core values of SPS</li>
-        </ul>
-
-        <p>We seek to carry out this mission through a combination of regularly-scheduled
-            meetings and extemporaneous projects designed to contribute to personal and
-            professional development; these often taking the form of invited speakers and
-            student workshops, as well as campus and community service events. When combined
-            with our unique culture, they serve to make our organization a central figure in the
-            campus life of physics majors during their time at Stony Brook University.</p>
+    </div>
+    <div class="container-full clearfix footer">
+        <a href="https://www.facebook.com/SBUSPS"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/spsstonybrook/"><i class="fab fa-instagram"></i></a>
+        <a href="matilto:spsstonybrook@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
 
     <script>
         function menu() {
@@ -92,8 +111,6 @@
                 x.className = "nav-bar clearfix";
             }
         }
-
     </script>
-</body>
+</body></html>
 
-</html>
