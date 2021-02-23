@@ -186,12 +186,13 @@ a.stacks {
     color: black;
 }
 
-.circle img {
+.circle i {
     display: block;
     position: relative;
     margin: 0 auto;
-    height: 60px;
-    width: 60px;
+    color: black;
+    text-align: center;
+    font-size: 60px;
 }
 
 .circle:hover {
