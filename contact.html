@@ -6,20 +6,23 @@
     <meta charset="utf-8">
 
     <!-- Favicon stuff -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/ico/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/ico/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/ico/favicon-16x16.png">
-    <link rel="manifest" href="/assets/ico/site.webmanifest">
-    <link rel="mask-icon" href="/assets/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/ico/favicon-16x16.png">
+    <link rel="manifest" href="assets/ico/site.webmanifest">
+    <link rel="mask-icon" href="assets/ico/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Info & Custom Style -->
-    <title>Stony Brook Society of Physics Students</title>
-    <link rel="stylesheet" href="/assets/style/styles.css">
+    <title>Contact Us | Stony Brook Society of Physics Students</title>
+    <meta name="keywords" content="Stony Brook, Physics, SPS, Society of Physics Students, Club">
+    <meta name="description" content="An undergraduate club for exploring the physics major at SBU">
+    <link rel="stylesheet" href="assets/style/styles.css">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- Carousel library -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -27,26 +30,34 @@
 
     <!-- Logos -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src='https://use.fontawesome.com/61f3df8c83.js' crossorigin='anonymous'></script>
 
 </head>
 
 <body>
-    <nav class="nav-bar clearfix" id="topnav">
-        <div class="nav-container">
-            <img src="/assets/media/logo.png" id="logo">
-            <ul>
-                <a href="javascript:void(0);" class="stacks" onclick="menu()">
-                    <i class="fa fa-bars"></i></a>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="schedule.html">Events</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="spsnational.html">SPS National</a></li>
-                <li><a href="contact.html">Join Us</a></li>
+    <div class="actual-container">
+        <nav class="nav-bar clearfix" id="topnav">
+            <div class="nav-container">
+                <a class="logo" href="/">
+                    <picture>
+                        <source media="(max-width: 1150px)" srcset="assets/media/logo.png">
+                        <source media="(min-width: 1151px)" srcset="assets/media/full_logo.png">
+                        <img src="assets/media/logo.png" id="logo"></img>
+                    </picture>
+                </a>
+                <ul>
+                    <a href="javascript:void(0);" class="stacks" onclick="menu()">
+                        <i class="fa fa-bars"></i></a>
+                    <li id="home"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="schedule.html">Events</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="spsnational.html">SPS National</a></li>
+                    <li><a href="contact.html">Join Us</a></li>
 
-            </ul>
-        </div>
-    </nav>
+                </ul>
+            </div>
+        </nav>
 
     <div class="container clearfix">
 <h1>Join Us</h1>
@@ -63,6 +74,13 @@
 
 <p>At the end of the spring semester, we hold our executive board elections. Joining the SPS Executive Board is the most direct way to ensure your voice is heard in deciding our chapter's direction and activities. Be on the lookout for announcements about elections in the late spring, and start getting to know your fellow members!</p>
     </div>
+    </div>
+    <div class="container-full clearfix footer">
+        <a href="https://www.facebook.com/SBUSPS"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/spsstonybrook/"><i class="fab fa-instagram"></i></a>
+        <a href="matilto:spsstonybrook@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
     <script>
         function menu() {
             var x = document.getElementById("topnav");
@@ -72,7 +90,5 @@
                 x.className = "nav-bar clearfix";
             }
         }
-
     </script>
-</body>
-</html>
+</body></html>

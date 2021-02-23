@@ -16,10 +16,13 @@
 
     <!-- Info & Custom Style -->
     <title>Stony Brook Society of Physics Students</title>
+    <meta name="keywords" content="Stony Brook, Physics, SPS, Society of Physics Students, Club">
+    <meta name="description" content="An undergraduate club for exploring the physics major at SBU">
     <link rel="stylesheet" href="/assets/style/styles.css">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- Carousel library -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -27,29 +30,36 @@
 
     <!-- Logos -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src='https://use.fontawesome.com/61f3df8c83.js' crossorigin='anonymous'></script>
 
 </head>
 
 <body>
-    <nav class="nav-bar clearfix" id="topnav">
-        <div class="nav-container">
-            <img src="/assets/media/logo.png" id="logo">
-            <ul>
-                <a href="javascript:void(0);" class="stacks" onclick="menu()">
-                    <i class="fa fa-bars"></i></a>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/schedule.html">Events</a></li>
-                <li><a href="/resources.html">Resources</a></li>
-                <li><a href="/spsnational.html">SPS National</a></li>
-                <li><a href="/contact.html">Join Us</a></li>
+    <div class="actual-container">
+        <nav class="nav-bar clearfix" id="topnav">
+            <div class="nav-container">
+                <a class="logo" href="/">
+                    <picture>
+                        <source media="(max-width: 1150px)" srcset="/assets/media/logo.png">
+                        <source media="(min-width: 1151px)" srcset="/assets/media/full_logo.png">
+                        <img src="/assets/media/logo.png" id="logo"></img>
+                    </picture>
+                </a>
+                <ul>
+                    <a href="javascript:void(0);" class="stacks" onclick="menu()">
+                        <i class="fa fa-bars"></i></a>
+                    <li id="home"><a href="index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/schedule.html">Events</a></li>
+                    <li><a href="/resources.html">Resources</a></li>
+                    <li><a href="/spsnational.html">SPS National</a></li>
+                    <li><a href="/contact.html">Join Us</a></li>
 
-            </ul>
-        </div>
-    </nav>
+                </ul>
+            </div>
+        </nav>
 
-    <div class="container clearfix">
-<h1>MAT versus AMS: What's the Difference?</h1>
+        <div class="container clearfix"><h1>MAT versus AMS: What's the Difference?</h1>
 
 <p>Stony Brook University houses a Mathematics (MAT) Department within the College of Arts and Sciences, as well as an Applied Mathematics and Statistics (AMS) Department under the College of Engineering and Applied Science. In addition to providing numerous specialized upper-division courses, each department has their own approach to teaching the introductory math courses, Calculus I-IV and Linear Algebra, which all physics majors must take. We describe the difference in these approaches below. For information on what MAT/AMS courses are most useful for the PHY major, click <a href="SARA'S PAGE">here.</a></p>
 
@@ -69,6 +79,12 @@
 
 <p>The AMS major is approximately 46 credits, ~22 of which consist of courses covered by the PHY major (ask Department permission to count PHY 277 towards the computing course requirement). You can find a list of major and minor requirements <a href="https://www.stonybrook.edu/sb/bulletin/current/academicprograms/ams/degreesandrequirements.php">here.</a></p>
     </div>
+    <div class="container-full clearfix footer">
+        <a href="https://www.facebook.com/SBUSPS"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/spsstonybrook/"><i class="fab fa-instagram"></i></a>
+        <a href="matilto:spsstonybrook@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
     <script>
         function menu() {
             var x = document.getElementById("topnav");
@@ -78,7 +94,5 @@
                 x.className = "nav-bar clearfix";
             }
         }
-
     </script>
-</body>
-</html>
+</body></html>

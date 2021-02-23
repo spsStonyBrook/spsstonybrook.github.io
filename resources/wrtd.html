@@ -16,10 +16,13 @@
 
     <!-- Info & Custom Style -->
     <title>Stony Brook Society of Physics Students</title>
+    <meta name="keywords" content="Stony Brook, Physics, SPS, Society of Physics Students, Club">
+    <meta name="description" content="An undergraduate club for exploring the physics major at SBU">
     <link rel="stylesheet" href="/assets/style/styles.css">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- Carousel library -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -27,29 +30,36 @@
 
     <!-- Logos -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src='https://use.fontawesome.com/61f3df8c83.js' crossorigin='anonymous'></script>
 
 </head>
 
 <body>
-    <nav class="nav-bar clearfix" id="topnav">
-        <div class="nav-container">
-            <img src="/assets/media/logo.png" id="logo">
-            <ul>
-                <a href="javascript:void(0);" class="stacks" onclick="menu()">
-                    <i class="fa fa-bars"></i></a>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/schedule.html">Events</a></li>
-                <li><a href="/resources.html">Resources</a></li>
-                <li><a href="/spsnational.html">SPS National</a></li>
-                <li><a href="/contact.html">Join Us</a></li>
+    <div class="actual-container">
+        <nav class="nav-bar clearfix" id="topnav">
+            <div class="nav-container">
+                <a class="logo" href="/">
+                    <picture>
+                        <source media="(max-width: 1150px)" srcset="/assets/media/logo.png">
+                        <source media="(min-width: 1151px)" srcset="/assets/media/full_logo.png">
+                        <img src="/assets/media/logo.png" id="logo"></img>
+                    </picture>
+                </a>
+                <ul>
+                    <a href="javascript:void(0);" class="stacks" onclick="menu()">
+                        <i class="fa fa-bars"></i></a>
+                    <li id="home"><a href="index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/schedule.html">Events</a></li>
+                    <li><a href="/resources.html">Resources</a></li>
+                    <li><a href="/spsnational.html">SPS National</a></li>
+                    <li><a href="/contact.html">Join Us</a></li>
 
-            </ul>
-        </div>
-    </nav>
+                </ul>
+            </div>
+        </nav>
 
-    <div class="container clearfix">
-<h1>The Physics Writing Requirement</h1>
+        <div class="container clearfix"><h1>The Physics Writing Requirement</h1>
 
 <p>Each major at Stony Brook University includes a WRTD requirement. For the PHY Major, this is PHY 459: Writing Effectively in Physics- a zero credit course that consists of writing what is essentially a mini paper. The goal is to show you understand the fundamental physics of a topic and can demonstrate those properties in action, i.e. through an experiment or research. Students must select a physics or astronomy faculty member to be their supervisor, who guides them in writing the paper according to physics standards, then gives the paper approval once complete. The paper is then sent to the undergraduate program director for final approval. PHY 459 is most commonly completed in the spring semester of one's senior year.</p>
 
@@ -79,6 +89,12 @@
 
 <p>Just like PHY 335, if students choose to use data collected during a senior lab experiment for their WRTD requirement, they must select their PHY 445 professor for their faculty supervisor.</p>
     </div>
+    <div class="container-full clearfix footer">
+        <a href="https://www.facebook.com/SBUSPS"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/spsstonybrook/"><i class="fab fa-instagram"></i></a>
+        <a href="matilto:spsstonybrook@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
     <script>
         function menu() {
             var x = document.getElementById("topnav");
@@ -88,7 +104,5 @@
                 x.className = "nav-bar clearfix";
             }
         }
-
     </script>
-</body>
-</html>
+</body></html>
