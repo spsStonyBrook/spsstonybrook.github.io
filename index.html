@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="assets/style/styles.css">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- Carousel library -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -29,46 +30,82 @@
 
     <!-- Logos -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
 </head>
 
 <body>
-    <nav class="nav-bar clearfix" id="topnav">
-        <div class="nav-container">
-            <img src="assets/media/logo.png" id="logo">
-            <ul>
-                <a href="javascript:void(0);" class="stacks" onclick="menu()">
-                    <i class="fa fa-bars"></i></a>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="schedule.html">Events</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="spsnational.html">SPS National</a></li>
-                <li><a href="contact.html">Join Us</a></li>
+    <div class="actual-container">
+        <nav class="nav-bar clearfix" id="topnav">
+            <div class="nav-container">
+                <a class="logo" href="/">
+                    <picture>
+                        <source media="(max-width: 1150px)" srcset="assets/media/logo.png">
+                        <source media="(min-width: 1151px)" srcset="assets/media/full_logo.png">
+                        <img src="assets/media/logo.png" id="logo"></img>
+                    </picture>
+                </a>
+                <ul>
+                    <a href="javascript:void(0);" class="stacks" onclick="menu()">
+                        <i class="fa fa-bars"></i></a>
+                    <li id="home"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="schedule.html">Events</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="spsnational.html">SPS National</a></li>
+                    <li><a href="contact.html">Join Us</a></li>
 
-            </ul>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-full clearfix">
+            <div class="hero-image">
+                <div class="hero-overlay">
+                    <h1>Welcome to Stony Brook SPS</h1> <br>
+                    <h2>Lorem ipsum</h2>
+                </div>
+            </div>
         </div>
-    </nav>
+        <div class="container clearfix">
+            <div class="circles">
+                <div class="circle mission"><a href="about.html">
+                        <h3>Our Mission</h3> <i class="fas fa-scroll"></i>
+                    </a></div>
+                <div class="circle community"><a href="community.html">
+                        <h3>Our Community</h3> <i class="fas fa-users"></i>
+                    </a></div>
+                <div class="circle new-students"><a href="new_students.html">
+                        <h3>New Students</h3> <i class="fas fa-graduation-cap"></i>
+                    </a></div>
+                <div class="circle schedule"><a href="schedule.html">
+                        <h3>Schedule</h3> <i class="fas fa-calendar"></i>
+                    </a></div>
+            </div>
+            <hr>
+            Our chapter continually serves our community by increasing engagement and efficacy in physics. We run outreach programs, collaborative workshops, and host talks by students and professors alike.
+            Our primary goal is to build a community for those interested in physics here at Stony Brook University where they can connect with like-minded individuals from a wide variety of backgrounds, and make friends for life.
+            This website features a number of resources which we've compiled for the benefit of our members here, and anyone else who might come across them.
 
-    <div class="container clearfix">
-        <h1>Welcome to SPS Stony Brook</h1>
 
-        Our chapter continually serves our community by increasing engagement and efficacy in physics. We run outreach programs, collaborative workshops, and host talks by students and professors alike.
-        Our primary goal is to build a community for those interested in physics here at Stony Brook University where they can connect with like-minded individuals from a wide variety of backgrounds, and make friends for life.
-        This website features a number of resources which we've compiled for the benefit of our members here, and anyone else who might come across them.
+            <div>
+            </div>
 
-
-        <div>
+            <div class="main-carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true}'>
+                <div class="carousel-cell">
+                    <img src="assets/media/caro1.jpg"> </div>
+                <div class="carousel-cell"> <img src="assets/media/caro2.jpg"> </div>
+                <div class="carousel-cell"> <img src="assets/media/caro3.jpg"> </div>
+                <div class="carousel-cell"> <img src="assets/media/caro4.jpg"> </div>
+                <div class="carousel-cell"> <img src="assets/media/caro5.jpg"> </div>
+            </div>
         </div>
+    </div>
 
-        <div class="main-carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true}'>
-            <div class="carousel-cell">
-                <img src="assets/media/caro1.jpg"> </div>
-            <div class="carousel-cell"> <img src="assets/media/caro2.jpg"> </div>
-            <div class="carousel-cell"> <img src="assets/media/caro3.jpg"> </div>
-            <div class="carousel-cell"> <img src="assets/media/caro4.jpg"> </div>
-            <div class="carousel-cell"> <img src="assets/media/caro5.jpg"> </div>
-        </div>
+    <div class="container-full clearfix footer">
+        <a href="https://www.facebook.com/SBUSPS"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/spsstonybrook/"><i class="fab fa-instagram"></i></a>
+        <a href="matilto:spsstonybrook@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
 
     <script>
@@ -80,7 +117,5 @@
                 x.className = "nav-bar clearfix";
             }
         }
-
     </script>
-</body>
-</html>
+</body></html>
