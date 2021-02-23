@@ -16,10 +16,13 @@
 
     <!-- Info & Custom Style -->
     <title>Stony Brook Society of Physics Students</title>
+    <meta name="keywords" content="Stony Brook, Physics, SPS, Society of Physics Students, Club">
+    <meta name="description" content="An undergraduate club for exploring the physics major at SBU">
     <link rel="stylesheet" href="/assets/style/styles.css">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- Carousel library -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -27,28 +30,36 @@
 
     <!-- Logos -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/23e83e0df9.js' crossorigin='anonymous'></script>
 
 </head>
 
 <body>
-    <nav class="nav-bar clearfix" id="topnav">
-        <div class="nav-container">
-            <img src="/assets/media/logo.png" id="logo">
-            <ul>
-                <a href="javascript:void(0);" class="stacks" onclick="menu()">
-                    <i class="fa fa-bars"></i></a>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/schedule.html">Events</a></li>
-                <li><a href="/resources.html">Resources</a></li>
-                <li><a href="/spsnational.html">SPS National</a></li>
-                <li><a href="/contact.html">Join Us</a></li>
+    <div class="actual-container">
+        <nav class="nav-bar clearfix" id="topnav">
+            <div class="nav-container">
+                <a class="logo" href="/">
+                    <picture>
+                        <source media="(max-width: 1150px)" srcset="/assets/media/logo.png">
+                        <source media="(min-width: 1151px)" srcset="/assets/media/full_logo.png">
+                        <img src="/assets/media/logo.png" id="logo"></img>
+                    </picture>
+                </a>
+                <ul>
+                    <a href="javascript:void(0);" class="stacks" onclick="menu()">
+                        <i class="fa fa-bars"></i></a>
+                    <li id="home"><a href="index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/schedule.html">Events</a></li>
+                    <li><a href="/resources.html">Resources</a></li>
+                    <li><a href="/spsnational.html">SPS National</a></li>
+                    <li><a href="/contact.html">Join Us</a></li>
 
-            </ul>
-        </div>
-    </nav>
+                </ul>
+            </div>
+        </nav>
 
-    <div class="container clearfix"><h1>Orientation Checklist</h1>
+        <div class="container clearfix"><h1>Orientation Checklist</h1>
 
 <p>Orientation and class selection can be hectic and confusing, so we've compiled a list of things you might find useful to know!</p>
 
@@ -63,17 +74,24 @@
 <h2>For Incoming First Year Students</h2>
 
 <ol>
-<li>In addition to your Introductory Physics Course (PHY 125/126, PHY 131, or PHY 141), <strong>make sure you sign up for PHY 133!</strong> There are two introductory lab courses: PHY 133, which is typically taken in the fall, and PHY 134, which is typically taken in the spring. Both in-person and online sections of the lab are available. There is no overwhelming advantage to taking one over the other, although the online section requires the purchase of a lab kit. Be sure to add it to your schedule as soon as you can, because seats fill up fast!</li>
-<li><strong>Consider spacing out your SBCs.</strong> Many seniors find themselves running out of courses to take in their final semesters. Others wish they saved some SBCs for their difficult junior/senior year semesters, rather than trying to get them out of the way too quickly.
-3.</li>
+<li><strong>There are different introductory physics and math course sequences!</strong> The Physics Department offers three introductory physics tracks, each with their own pace and level of mathematical rigor. If you're looking for a challenge, the PHY 141/142 Honors sequence might be right for you, or if you have AP Physics C Mechanics and E&amp;M credits, you may only need to take PHY 126! Descriptions of the physics sequences according to the department can be found <a href="http://www.physics.sunysb.edu/Physics/undergrad/NewUGPHY.shtml">here.</a> In terms of math courses, we've put together descriptions of the introductory MAT and AMS (applied mathematics and statistics) courses here.</li>
+<li>In addition to your introductory physics course, <strong>make sure you sign up for PHY 133!</strong> There are two introductory lab courses: PHY 133, which is typically taken in the fall, and PHY 134, which is typically taken in the spring. Both in-person and online sections of the lab are available. There is no overwhelming advantage to taking one over the other, although the online section requires the purchase of a lab kit. Be sure to add it to your schedule as soon as you can, because seats fill up fast!</li>
+<li><strong>Consider spacing out your SBCs.</strong> Many seniors find themselves running out of courses to take in their final semesters. Others wish they saved some SBCs for their difficult junior/senior year semesters, rather than trying to get them out of the way too quickly.</li>
 </ol>
 
 <h2>For Transfer Students</h2>
 
 <ol>
-<li>For international physics and math courses, ask our undergraduate program director, Dr. Robert McCarthy (robert.mccarthy[at]stonybrook.edu), if your credits can be applied towards an SBU degree before paying for any evaluations. It could save hundreds of dollars!</li>
+<li>For international physics and math courses, <strong>ask our undergraduate program director, Dr. Robert McCarthy (robert.mccarthy[at]stonybrook.edu), if your credits can be applied towards an SBU degree before paying for any evaluations.</strong> It could save hundreds of dollars!</li>
+<li><strong>DegreeWorks is not always accurate, so don't rely on it alone to determine what you need to graduate.</strong> We recommend you always double check with the official SBC and major requirements pages (links above), and use DegreeWorks as a general guide.</li>
 </ol>
     </div>
+    <div class="container-full clearfix footer">
+        <a href="https://www.facebook.com/SBUSPS"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/spsstonybrook/"><i class="fab fa-instagram"></i></a>
+        <a href="matilto:spsstonybrook@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
     <script>
         function menu() {
             var x = document.getElementById("topnav");
@@ -83,7 +101,5 @@
                 x.className = "nav-bar clearfix";
             }
         }
-
     </script>
-</body>
-</html>
+</body></html>
