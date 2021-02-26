@@ -23,4 +23,4 @@ Total: 15 credits. The full undergraduate bulletin can be found [here.](https://
 
 Notes:
 - Physics Senior Lab can be replaced by Astronomy Senior Lab.
-- While taking one of the 300-level astronomy courses first semester sophomore year is possible in some cases, it is not recommended. 
+- While taking one of the 300-level astronomy courses first semester sophomore year is possible in some cases, it is not recommended.
