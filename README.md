@@ -1,5 +1,10 @@
 # Stony Brook SPS Website
 
+## THINGS THAT NEED TO BE UPDATED YEARLY
+- Photos!! When I come back to this website in 4 years, I better not be able to recognize anyone!!!1!!1!!!
+- astro.html needs to have the AST 341/346/347/390 "Next Offered" years changed yearly
+- Check to make sure all links work
+
 ## Files
 
 ### Pages <HTML5>
@@ -21,11 +26,6 @@
     | - example.md: An example input to the tool  
     | - example.html: the output of example.md  
     | - postMaker.py: Script to convert. Usage: `postMaker.py [input\_file] [output\_file]`  
-
-## THINGS THAT NEED TO BE UPDATED YEARLY
-- Photos!! When I come back to this website in 4 years, I better not be able to recognize anyone!!!1!!1!!!
-- astro.html needs to have the AST 341/346/347/390 "Next Offered" years changed yearly
-- Check to make sure all links work
 
 ## Conventions
 
