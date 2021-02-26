@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="eng-us">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!-- Favicon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/ico/favicon-16x16.png">
+    <link rel="manifest" href="/assets/ico/site.webmanifest">
+    <link rel="mask-icon" href="/assets/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Info & Custom Style -->
+    <title>Stony Brook Society of Physics Students</title>
+    <meta name="keywords" content="Stony Brook, Physics, SPS, Society of Physics Students, Club">
+    <meta name="description" content="An undergraduate club for exploring the physics major at SBU">
+    <link rel="stylesheet" href="/assets/style/styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Carousel library -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Logos -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/23e83e0df9.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <div class="actual-container">
+        <nav class="nav-bar clearfix" id="topnav">
+            <div class="nav-container">
+                <a class="logo" href="/">
+                    <picture>
+                        <source media="(max-width: 1150px)" srcset="/assets/media/logo.png">
+                        <source media="(min-width: 1151px)" srcset="/assets/media/full_logo.png">
+                        <img src="/assets/media/logo.png" id="logo"></img>
+                    </picture>
+                </a>
+                <ul>
+                    <a href="javascript:void(0);" class="stacks" onclick="menu()">
+                        <i class="fa fa-bars"></i></a>
+                    <li id="home"><a href="index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/schedule.html">Events</a></li>
+                    <li><a href="/resources.html">Resources</a></li>
+                    <li><a href="/spsnational.html">SPS National</a></li>
+                    <li><a href="/contact.html">Join Us</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container clearfix">
+<h1>What makes SBU physics unique?</h1>
+
+<p>Stony Brook isn't the only university offering physics degrees. Why come here instead of somewhere else? 
+    In a word, research.</p>
+
+<h3>We're a Big Research University</h3>
+
+<p>As a large research university, nearly every professor is actively pursuing his or her own topic of research 
+    while lecturing. As such, the demand for undergraduate assistance is relatively high. We cannot understate how
+     important undergraduate research experience is when applying to graduate school. It is not an opportunity 
+     physics students in smaller universities typically experience.</p>
+
+<h3>Proximity to BNL</h3>
+
+<p>Barely 10 miles from the university is Brookhaven National Laboratory. It has a wide range of facilities, 
+    from particle accelerators to nanomaterial shops to supercomputers. Some of the professors here are 
+    partnered with the lab, and still other independent opportunities exist outside of the university staff.
+     If you've ever wanted to work with government-grade toys, this might be your chance. Visit
+     <a href  = "https://www.bnl.gov/science/">their website</a> for more information.
+
+<h3>A Small Major</h3>
+
+<p>With about 50 graduates a year, Stony Brook’s undergraduate physics department is on the smaller side,
+     despite the size of the university. This means that class sizes after freshman year are very manageable. 
+     It gives the chance to build relationships with professors, which are useful for letters of recommendation,
+      research opportunities, and more. You’ll also get to know and network with most of your peers.</p>
+
+<h3>Theoretical/Experimental Split</h3>
+
+<p>A common point of contention among undergraduates pursuing PhDs is whether one focuses on developing 
+    theory or performing experiments. Stony Brook will offer you a glimpse into both realms. Most classes
+     focus on theoretical understanding, while the accompanying lab courses provide useful exercises in
+      experimental setup and data analysis. </p>
+
+<p>Additionally, our professors research a wide range of topics, both theoretical and experimental, and are
+     always in search of undergraduate help. To better prepare yourself for research, it is also convenient
+      to double-major in either our MAT (pure mathematics for theory) or AMS (applied math/statistics for analysis).
+       These courses slot in neatly with the physics major, and will widen your base of mathematical understanding. 
+       If you’re looking to become a theorist, experimentalist, undecided, or neither, we have something for you. </p>    
+    </div>
+    <div class="container-full clearfix footer">
+        <a href="https://www.facebook.com/SBUSPS"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/spsstonybrook/"><i class="fab fa-instagram"></i></a>
+        <a href="matilto:spsstonybrook@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <script>
+        function menu() {
+            var x = document.getElementById("topnav");
+            if (x.className === "nav-bar clearfix") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav-bar clearfix";
+            }
+        }
+    </script>
+</body></html>
