@@ -369,6 +369,19 @@ a.stacks {
     top: 0;
 }
 
+.hero-overlay-light {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 0;
+}
+
 /* Posts */
 .post {
     text-decoration: none !important;
