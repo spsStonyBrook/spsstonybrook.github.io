@@ -1,6 +1,6 @@
 # Major Overview
 
-The Physics major at Stony Brook will provide you with an understanding of how the world works along with the skills to apply this understanding in any field. You will develop a strong background in classical physics, learn about modern experiments and the theory behind them, and apply your knowledge with practical labs. Physics also requires a good amount of mathematics, taught in MAT or AMS courses, and some experience in other STEM subjects. The Physics major is about 65 credits and leads to a Bachelor of Science.
+The Physics major at Stony Brook will provide you with an understanding of how the world works along with the skills to apply this understanding in any field. You will develop a strong background in classical physics, learn about modern experiments and the theory behind them, and apply your knowledge with practical labs. Physics also requires a good amount of mathematics, taught in MAT or AMS courses, and some experience in other STEM subjects. The major itself about 65 credits and leads to a Bachelor of Science.
 
 ## Introductory Courses
 There are several different introductory physics sequences to choose from, usually in freshman year, that include lecture and lab classes. Generally, the first semester covers mechanics and the second semester covers electricity and magnetism.
