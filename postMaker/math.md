@@ -1,6 +1,6 @@
 # MAT versus AMS: What's the Difference?
 
-Stony Brook University houses a Mathematics (MAT) Department within the College of Arts and Sciences, as well as an Applied Mathematics and Statistics (AMS) Department under the College of Engineering and Applied Science. In addition to providing numerous specialized upper-division courses, each department has their own approach to teaching the introductory math courses, Calculus I-IV and Linear Algebra, which all physics majors must take. We describe the difference in these approaches below. For information on what MAT/AMS courses are most useful for the PHY major, click [here.](SARA'S PAGE)
+Stony Brook University houses a Mathematics (MAT) Department within the College of Arts and Sciences, as well as an Applied Mathematics and Statistics (AMS) Department under the College of Engineering and Applied Science. In addition to providing numerous specialized upper-division courses, each department has their own approach to teaching the introductory math courses, Calculus I-IV and Linear Algebra, which all physics majors must take. We describe the difference in these approaches below. For information on what MAT/AMS courses are most useful for the PHY major, click [here.](https://spsstonybrook.github.io/resources/major.html)
 
 ## MAT Overview
 
