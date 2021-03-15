@@ -39,3 +39,7 @@ The Department also has a list of famous Physics alumni [here.](http://www.physi
 **Emma van Nieuwenhuizen:** Graduate student at Duke University, Physics.
 
 ### Class of 2019
+
+### Class of 2018
+
+**Gordon Arrowsmith-Kron:** Graduate student at Michigan State University, Physics.
