@@ -28,10 +28,14 @@ The Department also has a list of famous Physics alumni [here.](http://www.physi
 
 **Audrey Farrell:** Graduate student and NSF GRFP Fellow at UCLA, Physics.
 
+**Gregory Matousek:** Graduate student at Duke University, Physics.
+
 **Nicholas Miklave:** Graduate student at University of Louisiana at Lafayette, Biology.
 
 **Samantha Murphy:** M.S. Graduate student at Penn State, Atmospheric Science.
 
 **Matthew Stern:**
+
+**Emma van Nieuwenhuizen:** Graduate student at Duke University, Physics.
 
 ### Class of 2019

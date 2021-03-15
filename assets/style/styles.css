@@ -215,14 +215,14 @@ a.stacks {
     position: relative;
     padding-top: 30px;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 .circle i {
     display: block;
     position: relative;
     margin: 0 auto;
-    color: black;
+    color: white;
     text-align: center;
     font-size: 60px;
 }
