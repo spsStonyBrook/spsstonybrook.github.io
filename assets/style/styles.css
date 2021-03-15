@@ -39,7 +39,7 @@ a {
 
 /* Nav bar*/
 .nav-bar {
-    background-color: #335D99;
+    background-color: #2E548A;
     height: 80px;
     width: 100%;
     text-align: center;
@@ -56,7 +56,7 @@ a {
     display: inline-block;
     vertical-align: middle;
     float: right;
-    background-color: #335D99;
+    background-color: #2E548A;
 }
 
 .nav-bar li {
@@ -77,7 +77,7 @@ a {
 }
 
 .nav-bar li a:hover {
-    color: rgb(230, 55, 70)/*rgb(107, 167, 212)*/ !important;
+    color: rgb(168, 218, 220)/*rgb(107, 167, 212)*/ !important;
 }
 
 .nav-container {
@@ -101,7 +101,7 @@ a {
 }
 
 a.stacks {
-    color: #335D99;
+    color: #2E548A;
 }
 
 @media screen and (max-width: 1150px) {
@@ -200,7 +200,7 @@ a.stacks {
 }
 
 .new-students {
-    background-color: #19c963;
+    background-color: #139c4d;
 }
 
 .schedule {
@@ -208,7 +208,7 @@ a.stacks {
 }
 
 .community {
-    background-color: #c96319;
+    background-color: #e06e1c;
 }
 
 .circle h3 {
@@ -360,7 +360,7 @@ a.stacks {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5);
     color: #F1FAEE;
     display: flex;
     align-items: center;
@@ -373,7 +373,7 @@ a.stacks {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.3);
     color: #F1FAEE;
     display: flex;
     align-items: center;
@@ -403,7 +403,7 @@ a.stacks {
     height: auto;
     margin-top: 40px;
     padding: 15px 10px 5px;
-    background-color: #335D99;
+    background-color: #2E548A;
     text-align: center;
     letter-spacing: 0.5em;
 }
