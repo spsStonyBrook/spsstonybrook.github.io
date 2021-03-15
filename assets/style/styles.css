@@ -39,7 +39,7 @@ a {
 
 /* Nav bar*/
 .nav-bar {
-    background-color: #55698C;
+    background-color: #5590B4;
     height: 80px;
     width: 100%;
     text-align: center;
@@ -56,7 +56,7 @@ a {
     display: inline-block;
     vertical-align: middle;
     float: right;
-    background-color: #55698C;
+    background-color: #5590B4;
 }
 
 .nav-bar li {
@@ -101,7 +101,7 @@ a {
 }
 
 a.stacks {
-    color: #55698C;
+    color: #5590B4;
 }
 
 @media screen and (max-width: 1150px) {
@@ -124,11 +124,11 @@ a.stacks {
         position: relative;
         z-index: 10;
     }
-    
+
     #home {
         height: 200px;
     }
-    
+
     .nav-bar.responsive li {
         display: block;
         height: 100px;
@@ -196,33 +196,33 @@ a.stacks {
 }
 
 .mission {
-    background-color: #F1D8C5;
+    background-color: #a8dcaa;
 }
 
 .new-students {
-    background-color: #B1D4EC;
+    background-color: #A8DADC;
 }
 
 .schedule {
-    background-color: ##B3B8DF;
+    background-color: #dca8da;
 }
 
 .community {
-    background-color: #E4C5CD;
+    background-color: #dcaaa8;
 }
 
 .circle h3 {
     position: relative;
     padding-top: 30px;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 .circle i {
     display: block;
     position: relative;
     margin: 0 auto;
-    color: black;
+    color: white;
     text-align: center;
     font-size: 60px;
 }
@@ -361,7 +361,7 @@ a.stacks {
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.8);
-    color: white;
+    color: #F1FAEE;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -374,7 +374,7 @@ a.stacks {
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.6);
-    color: white;
+    color: #F1FAEE;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -403,13 +403,13 @@ a.stacks {
     height: auto;
     margin-top: 40px;
     padding: 15px 10px 5px;
-    background-color: #55698C;
+    background-color: #5590B4;
     text-align: center;
     letter-spacing: 0.5em;
 }
 
 .footer a {
-    color: white;
+    color: #F1FAEE;
 }
 
 .footer i {
