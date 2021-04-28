@@ -6,17 +6,17 @@ The Department also has a list of famous Physics alumni [here.](http://www.physi
 
 ### Class of 2021
 
-**Salvatore Baldenucci:**
+**Salvatore Baldenucci:** Ph.D. student at University of Michigan, Applied Physics.
 
-**Naomi Gluck:** Graduate student at Yale University, Physics.
+**Naomi Gluck:** Ph.D. student at Yale University, Physics.
 
-**Dmitriy Kim:**
+**Dmitriy Kim:** Ph.D. student at University of Washington, Physics.
 
 **Austin Laviano:**
 
-**Neomi Lewis:**
+**Neomi Lewis:** Ph.D. student at Stanford University, Applied Physics.
 
-**Marisa Petrusky:**
+**Marisa Petrusky:** Ph.D. student at University of Colorado Boulder, Aerospace Engineering.
 
 **Allen Pierre-Louis:**
 
@@ -26,20 +26,22 @@ The Department also has a list of famous Physics alumni [here.](http://www.physi
 
 **Ilana Bromberg:** SULI Intern at the Accelerator Test Facility, Brookhaven National Lab.
 
-**Audrey Farrell:** Graduate student and NSF GRFP Fellow at UCLA, Physics.
+**Audrey Farrell:** Ph.D. student and NSF GRFP Fellow at UCLA, Physics.
 
-**Gregory Matousek:** Graduate student at Duke University, Physics.
+**Gregory Matousek:** Ph.D. student at Duke University, Physics.
 
-**Nicholas Miklave:** Graduate student at University of Louisiana at Lafayette, Biology.
+**Nicholas Miklave:** Ph.D. student at University of Louisiana at Lafayette, Biology.
 
-**Samantha Murphy:** M.S. Graduate student at Penn State, Atmospheric Science.
+**Samantha Murphy:** M.S. student at Penn State, Atmospheric Science.
 
 **Matthew Stern:**
 
-**Emma van Nieuwenhuizen:** Graduate student at Duke University, Physics.
+**Emma van Nieuwenhuizen:** Ph.D. student at Duke University, Physics.
 
 ### Class of 2019
 
+**Michael Quigley:** Data analyst at Apple.
+
 ### Class of 2018
 
-**Gordon Arrowsmith-Kron:** Graduate student at Michigan State University, Physics.
+**Gordon Arrowsmith-Kron:** Ph.D. student at Michigan State University, Physics.
