@@ -3,7 +3,7 @@
 ## THINGS THAT NEED TO BE UPDATED YEARLY
 - Photos!! When I come back to this website in 4 years, I better not be able to recognize anyone!!!1!!1!!!
 - astro.html needs to have the AST 341/346/347/390 "Next Offered" years changed yearly
-- Check to make sure all links work
+- Go through all webpages and check to see if any information is outdated. Also make sure all links work.
 
 ## Files
 
